@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attenzione</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="alert">
+            <div>
+                <p id="utente"></p>
+                <p style="margin-top: 50px">
+                    La prossima volta stai più attento/a, stavi per dare le tue
+                    credenziali a due tipi loschi!
+                </p>
+            </div>
+        </div>
+
+        <script>
+            const email = location.href
+                .split("?")[1]
+                .split("=")[1]
+                .replace("%40", "@");
+
+            document.getElementById("utente").innerHTML =
+                "Hey<br><span>" + email + "</span>";
+        </script>
+    </body>
+</html>

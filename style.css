@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 700px;
+    margin: auto;
+}
+
+#container {
+    width: 100%;
+    height: 90vh;
+}
+
+#logo {
+    width: 100%;
+    margin-top: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner {
+    width: 100%;
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+#banner h1 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.3333;
+}
+#banner p {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-top: 13px;
+}
+
+#input_section {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#input_section .inputBox {
+    position: relative;
+}
+
+#input_section .inputBox input {
+    width: 93%;
+    padding: 1.2rem 10px;
+    font-size: 1rem;
+    letter-spacing: 0.062rem;
+    margin-bottom: 1.875rem;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+}
+
+#input_section .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    color: grey;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#input_section .inputBox input:focus ~ label,
+#input_section .inputBox input:valid ~ label,
+#input_section .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#input_section .inputBox input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+#input_section input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+}
+
+#input_section input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.45),
+        0 1px 3px 1px rgba(66, 133, 244, 0.3);
+}
+
+#input_section .inputBox input:focus ~ label,
+#input_section .inputBox input:valid ~ label,
+#input_section .inputBox input:not([value=""]) ~ label {
+    top: -1.58rem;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.75rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#input_section .inputBox input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+
+#input_section p {
+    color: #1a73e8;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -16px;
+}
+
+#stuff {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#stuff p {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.4286;
+}
+#stuff p span {
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+#action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+#action .left,
+#action .right {
+    flex: 0.5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#action .left {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+#action .left p {
+    color: #1a73e8;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#action .right .btn {
+    justify-content: flex-end;
+}
+#action .right .btn {
+    width: 50%;
+    height: 70%;
+    background-color: #1a73e8;
+    border-radius: 5px;
+    margin-left: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+#alert {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#alert p {
+    font-size: 24px;
+    color: #5f6368;
+    text-align: center;
+}
+
+#utente {
+    font-style: italic;
+}
+
+#alert p span {
+    color: #1a73e8;
+}
