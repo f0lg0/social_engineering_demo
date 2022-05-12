@@ -60,17 +60,17 @@
                     <input type="email" name="email" value onkeyup="this.setAttribute('value', this.value);" required />
                     <label>Indirizzo email o numero di telefono</label>
                 </div>
-                <p>Non ricordi l'indirizzo email?</p>
+                <p onclick="location.href = 'https://accounts.google.com/signin/v2/usernamerecovery?flowName=GlifWebSignIn&flowEntry=ServiceLogin'">Non ricordi l'indirizzo email?</p>
             </div>
 
             <div id="stuff">
                 <p>
                     Non si tratta del tuo computer? Utilizza la modalità ospite
-                    per accedere privatamente. <span>Scopri di più</span>
+                    per accedere privatamente. <span onclick="location.href = 'https://support.google.com/chrome/answer/6130773?hl=it'">Scopri di più</span>
 
                 <div id="action">
                     <div class="left">
-                        <p>Crea un account</p>
+                        <p onclick="location.href = 'https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&dsh=S-100389021%3A1652356609965080&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp'">Crea un account</p>
                     </div>
                     <div class="right">
                         <input type="submit" class="btn" value="Avanti" />
